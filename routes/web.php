@@ -21,10 +21,7 @@ Route::get('register', 'PageController@registerfun')->name('registerpage');
 Route::get('shoppingcart', 'PageController@shoppingcartfun')->name('shoppingcartpage');
 Route::get('subcategory', 'PageController@subcategoryfun')->name('subcategorypage');
 Route::get('orderlists', 'BackendController@orderlistfun')->name('orderlistpage');
- Route::get('orderdetail/{id}','BackendController@orderdetail')->name('orderdetail');
-
-
-
+ Route::get('orderdetail/{id}','BackendController@orderdetail')->name('orderdetail');	
 Route::resource('brands','BrandController');
 Route::resource('categories','CategoryController');
 Route::resource('subcategories','SubcategoryController');
